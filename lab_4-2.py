@@ -19,17 +19,22 @@ provided by the user and return if the strings are equal, one string is greater 
 
 
 """
-# lab_4-3.py
+# lab_4-2.py
 # Author: Andrew Tkacs
 
-# Get two strings from the user.
-string1 = input("Enter the first string: ")
-string2 = input("Enter the second string: ")
+#write school name
+school = "Fairfield Prep"
 
-# Compare the two strings in terms of if they are equal or one is greater or less than the other and provide the result.
-if string1 == string2:
-    print("The strings are equal.")
-elif string1 < string2:
-    print("The first string is less than the second string.")
-else:
-    print("The first string is greater than the second string.")
+#split the schools name into two parts- starting with the first part= fairfield.
+first_half = school.split(" ")[0]
+
+#second part= prep
+second_half = school.split(" ")[1]
+
+#print it
+print("First Half:", first_half)
+print("Second Half:", second_half)
+
+#combine both parts and print it.
+together = first_half +  second_half
+print("Full Name:", together)
